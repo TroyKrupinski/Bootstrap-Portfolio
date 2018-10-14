@@ -1,54 +1,64 @@
-<!doctype html>
-
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index</title>
 
-
-  <title>Contact</title>
-
-
-  <link rel="stylesheet" href="assets/css/Ccontacts.css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<style>
+    h1{
+        color: #66a3ff;
+        
+    }
+    body{
+        background-image: url('assets/images/bg.png');
+    }
+    h2{
+        color: turquoise;
+    }
+    .footer{
+        position: fixed;
+    }
+    h3{
+        color: white;
+    }
+</style>
 </head>
 
 <body>
-        <header>
-                <p>Troy Krupinski</p>
-            </header>
-        <div class = "header2">
-                <a href="index.html">About&nbsp;&nbsp</a>
-                <a href="portfolio.html">Portfolio  &nbsp;&nbsp</a>
-                <a href="contact.html">Contact  </a>
-        </div>
+        <nav class="navbar navbar-inverse">
+                <div class="container">
+                <a class="navbar-brand"><h1 style="margin-top: -10px">Troy Krupinski</h1></a>
+                
+                <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="Portfolio.html">Portfolio</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                </nav>
+                <div class="container">
+                <div class="row">
 
 <section>
+		<div class="col-xs-10 col-sm-10 col-md-7">
 
-        <div class = "AM">
-            <p id = "Text1">Contact</p>
-            <hr>
-            <P id = "Text2">Name <br><input type="text" name="FirstName" value="John Smith"><br>
-
-            </P>
-            <P id = "Text2">Email <br><input type="text" name="FirstName" value="example@gmail.com"><br>
-                
-            </P>
-            <P id = "Text3">Message <br><input id = "Text3" input type="text" name="FirstName" value=""><br>
-                
-            </P>
-            <div class = "Submit">
-                <p>Submit</p>
-            </div>
+                <h2>Contact Me</h2>
+                <form action="/action_page.php">
+        <div class="form-group">
+          <h3><label for="Name">Name</label></h3>
+          <input type="name" class="form-control" id="name" placeholder="John Smith" name="name">
         </div>
-        
-
-    </section>
-    <div class = "f2">
-
+          <div class="form-group">
+          <h3><label for="email">Email</label></h3>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
         </div>
-    <footer>
-            <p>Copyright©</p>
-            </footer>
+        <div class="form-group">
+          <h3><label for="message">Message</label></h3>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="12"></textarea>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </section>    
+
 </body>
 </html>
